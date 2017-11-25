@@ -155,6 +155,89 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>oracle10g rac环境重建em<br>1.查看dbconsole的状态<br>emctl status dbconsole<br>2.查看RAC数据库 dbcontrol 的配置信息<br>emca -displayConfig dbcontrol -cluster<br>3.清除RAC数据库旧的配置信息<br>emca -deconfig dbcontrol db -repos drop -cluster<br>4.重新建立RAC数据库的db control的配置信息<br>emca -config dbcontrol db -repos create -cluster</p>
+<p>$ emca -repos drop</p>
+<p>STARTED EMCA at Jul 4, 2007 24737 AM<br>EM Configuration Assistant, Version 10.2.0.1.0 Production<br>Copyright (c) 2003, 2005, Oracle. All rights reserved.<br>Enter the following information<br>Database SID caskdb<br>Listener port number 1521<br>Password for SYS user<br>Password for SYSMAN user</p>
+<p>$ emca -repos drop</p>
+<p>STARTED EMCA at Jul 4, 2007 24811 AM<br>EM Configuration Assistant, Version 10.2.0.1.0 Production<br>Copyright (c) 2003, 2005, Oracle. All rights reserved.<br>Enter the following information<br>Database SID caskdb1<br>Listener port number 1521<br>Password for SYS user<br>Password for SYSMAN user</p>
+<p>$ emca -config dbcontrol db -repos create -cluster</p>
+<p>STARTED EMCA at Jul 30, 2012 73301 PM</p>
+<p>EM Configuration Assistant, Version 10.2.0.1.0 Production</p>
+<p>Copyright (c) 2003, 2005, Oracle.  All rights reserved.</p>
+<p>Enter the following information</p>
+<p>Database unique name caskdb</p>
+<p>Listener port number 1521</p>
+<p>Cluster name crs</p>
+<p>Password for SYS user  </p>
+<p>Password for DBSNMP user  </p>
+<p>Password for SYSMAN user  </p>
+<p>Email address for notifications (optional) </p>
+<p>Outgoing Mail (SMTP) server for notifications (optional) </p>
+<p>ASM ORACLE_HOME [ /u01/app/oracle/product/10/db ] </p>
+<p>ASM port [ 1521 ] </p>
+<p>ASM user role [ SYSDBA ] </p>
+<p>ASM username [ SYS ] </p>
+<p>ASM user password  </p>
+<hr>
+<p>You have specified the following settings</p>
+<p>Database ORACLE_HOME ……………. /u01/app/oracle/product/10/db</p>
+<p>Database instance hostname ……………. prod-rac1</p>
+<p>Listener port number ……………. 1521</p>
+<p>Cluster name ……………. crs</p>
+<p>Database unique name ……………. caskdb</p>
+<p>Email address for notifications …………… </p>
+<p>Outgoing Mail (SMTP) server for notifications …………… </p>
+<p>ASM ORACLE_HOME ……………. /u01/app/oracle/product/10/db</p>
+<p>ASM port ……………. 1521</p>
+<p>ASM user role ……………. SYSDBA</p>
+<p>ASM username ……………. SYS</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/25/1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
