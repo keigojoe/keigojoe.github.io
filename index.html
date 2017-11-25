@@ -158,6 +158,21 @@
     <article id="post-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/25/1/">oracle10g rac环境重建em</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/25/1/" class="archive-article-date">
+  	<time datetime="2017-11-25T14:12:13.122Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-25</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>oracle10g rac环境重建em<br>1.查看dbconsole的状态<br>emctl status dbconsole<br>2.查看RAC数据库 dbcontrol 的配置信息<br>emca -displayConfig dbcontrol -cluster<br>3.清除RAC数据库旧的配置信息<br>emca -deconfig dbcontrol db -repos drop -cluster<br>4.重新建立RAC数据库的db control的配置信息<br>emca -config dbcontrol db -repos create -cluster</p>
